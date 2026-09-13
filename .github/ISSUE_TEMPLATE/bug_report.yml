@@ -1,4 +1,4 @@
-name: Bug report
+name: 🐞 Bug report
 description: Сообщить об ошибке на платформе итд.com
 title: "[BUG] "
 labels: ["bug", "needs-triage"]
@@ -34,17 +34,17 @@ body:
     id: expected
     attributes:
       label: Ожидаемый результат
-      description: Что должно было произойти?
+      description: Что должно было произойти? (необязательно для чисто визуальных багов)
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: actual
     attributes:
       label: Фактический результат
-      description: Что произошло вместо этого? Текст ошибки — копируйте точно.
+      description: Что произошло вместо этого? Текст ошибки — копируйте точно. (необязательно для чисто визуальных багов)
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: bug_type
