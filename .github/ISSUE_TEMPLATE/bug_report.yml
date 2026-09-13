@@ -1,0 +1,147 @@
+name: Bug report
+description: Сообщить об ошибке на платформе итд.com
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что сообщаете о проблеме! Заполните форму как можно подробнее — это ускорит исправление.
+        Перед отправкой проверьте, что похожего issue ещё нет.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание проблемы
+      description: Что именно происходит не так?
+      placeholder: Опишите баг своими словами
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги для воспроизведения
+      description: Пронумерованный список действий, которые приводят к багу
+      placeholder: |
+        1. Открыть страницу ...
+        2. Нажать ...
+        3. Увидеть ошибку ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+      description: Что должно было произойти?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+      description: Что произошло вместо этого? Текст ошибки — копируйте точно.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: bug_type
+    attributes:
+      label: Тип бага
+      options:
+        - UI/визуальный (вёрстка, отображение)
+        - Функциональный (логика работает неверно)
+        - Краш / вылет приложения
+        - Производительность (тормозит, зависает)
+        - Безопасность
+        - Данные (потеря/искажение данных пользователя)
+        - Другое
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Где обнаружено
+      description: На каком компоненте платформы воспроизводится баг
+      options:
+        - Frontend (веб)
+        - Backend / API
+        - iOS приложение
+        - Android приложение
+        - Не уверен(а)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Насколько критично?
+      options:
+        - Критично — платформа/ключевая функция недоступна
+        - Высоко — сильно мешает пользоваться
+        - Средне — заметно, но есть обходной путь
+        - Низко — косметическая проблема
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Устройство
+      options:
+        - Desktop
+        - Mobile
+        - Tablet
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: ОС и версия
+      placeholder: например, Windows 11 / iOS 18.1 / Android 14
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Браузер / приложение и версия
+      placeholder: например, Chrome 129, Safari 18
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: URL или раздел платформы, где воспроизводится
+      placeholder: https://итд.com/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: frequency
+    attributes:
+      label: Частота воспроизведения
+      placeholder: всегда / иногда / один раз
+    validations:
+      required: false
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Скриншоты / видео / консоль браузера
+      description: Перетащите файлы сюда или вставьте ссылки
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Дополнительный контекст
+      description: Всё остальное, что может быть полезно
+    validations:
+      required: false
