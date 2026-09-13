@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Как правильно оформить репорт
+    url: https://github.com/itd-social/BUG-REPORT/blob/main/CONTRIBUTING.md
+    about: Прочитайте перед созданием issue, если не уверены, что и как заполнять
