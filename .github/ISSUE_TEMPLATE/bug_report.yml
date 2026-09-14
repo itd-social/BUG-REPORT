@@ -1,7 +1,7 @@
 name: 🐞 Bug report
 description: Сообщить об ошибке на платформе итд.com
 title: "[BUG] "
-labels: ["bug", "needs-triage"]
+labels: ["needs-triage"]
 body:
   - type: markdown
     attributes:
@@ -29,22 +29,6 @@ body:
         3. Увидеть ошибку ...
     validations:
       required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: Ожидаемый результат
-      description: Что должно было произойти? (необязательно для чисто визуальных багов)
-    validations:
-      required: false
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: Фактический результат
-      description: Что произошло вместо этого? Текст ошибки — копируйте точно. (необязательно для чисто визуальных багов)
-    validations:
-      required: false
 
   - type: dropdown
     id: bug_type
@@ -131,17 +115,9 @@ body:
       required: false
 
   - type: textarea
-    id: media
+    id: suggestion
     attributes:
-      label: Скриншоты / видео / консоль браузера
-      description: Перетащите файлы сюда или вставьте ссылки
-    validations:
-      required: false
-
-  - type: textarea
-    id: extra
-    attributes:
-      label: Дополнительный контекст
-      description: Всё остальное, что может быть полезно
+      label: Предлагаемое решение
+      description: Если есть идея, как это можно исправить (необязательно)
     validations:
       required: false
